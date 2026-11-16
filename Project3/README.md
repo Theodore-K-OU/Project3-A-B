@@ -17,3 +17,12 @@ You can also try [the experimental native React Compiler support in plugin-react
 ## Expanding the Oxlint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+
+## Running this website
+
+to run this application, you first download all the files, then you open your CMD, and go to the location of the node folder. for example C:\downlaod path\kosarekProject3\Project3\node_modules
+once found you run the command -- npm run dev
+then you can press h + enter, and open the link to the running server.
+
+Delete Later
+C:\Users\tkosa\OneDrive\Documents\GitHub\KosarekProject3\Project3\node_modules
