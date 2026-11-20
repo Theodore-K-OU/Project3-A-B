@@ -8,7 +8,7 @@ const ProductCard = ({ product, onAddToCart }) => {
 
   return (
     <article className="product-card">
-      <Link className="product-img" to={`/product/${product.id}`}>
+      <Link className="product-img" to={`/album/${product.id}`}>
         <img
           className="product-img"
           src={product.image}
@@ -19,7 +19,7 @@ const ProductCard = ({ product, onAddToCart }) => {
       <div className="product-info">
         <span className="product-genre">{product.genre}</span>
         <h3 className="product-name">
-          <Link to={`/product/${product.id}`}>{product.title}</Link>
+          <Link to={`/album/${product.id}`}>{product.title}</Link>
         </h3>
         <p className="product-artist">{product.artist}</p>
         <p className="product-price">${product.price.toFixed(2)}</p>
