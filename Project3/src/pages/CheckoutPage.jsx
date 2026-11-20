@@ -132,7 +132,7 @@ const CheckoutPage = ({ cart, onClearCart }) => {
             {cart.map((item) => (
               <li key={item.id} className="invoice-item">
                 <span>
-                  {item.name} x {item.quantity}
+                  {item.title} x {item.quantity}
                 </span>
                 <span>${(item.price * item.quantity).toFixed(2)}</span>
               </li>

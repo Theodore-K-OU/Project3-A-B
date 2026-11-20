@@ -39,21 +39,21 @@ const CartDrawer = ({ isOpen, cart, onClose, onUpdateQuantity, onRemove }) => {
                 <li key={item.id} className="cart-item">
                   <img
                     src={item.image}
-                    alt={item.name}
+                    alt={item.title}
                     className="cart-item-img"
                   />
 
                   <div className="cart-item-info">
-                    <h4>{item.name}</h4>
+                    <h4>{item.title}</h4>
                     <p className="cart-item-price">
                       ${(item.price * item.quantity).toFixed(2)}
                     </p>
                     <div className="qty-controls">
-                      <button onClick={() => onUpdateQuanity(item.id, -1)}>
+                      <button onClick={() => onUpdateQuantity(item.id, -1)}>
                         -
                       </button>
                       <span>{item.quantity}</span>
-                      <button onClick={() => onUpdateQuanity(item.id, 1)}>
+                      <button onClick={() => onUpdateQuantity(item.id, 1)}>
                         +
                       </button>
                       <button

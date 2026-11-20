@@ -23,15 +23,15 @@ const ProductDetailPage = ({ products, onAddToCart }) => {
   return (
     <div className="-detail-container">
       <nav className="breadcrumb">
-        <Link to="/">Catalog</Link> &gt; <span>{product.name}</span>
+        <Link to="/">Catalog</Link> &gt; <span>{product.title}</span>
       </nav>
 
       <div className="detail-grid">
-        <img src={product.image} alt={product.name} className="detail-image" />
+        <img src={product.image} alt={product.title} className="detail-image" />
 
         <div className="detail-info">
           <span className="detail-genre">{product.genre}</span>
-          <h1 className="detail-name">{product.name}</h1>
+          <h1 className="detail-name">{product.title}</h1>
           <p className="detail-description">{product.description}</p>
           <p className="detail-price">${product.price.toFixed(2)}</p>
           <div className="stock-tag">
