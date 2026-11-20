@@ -3,13 +3,13 @@ import ProductCard from "../components/ProductCard";
 
 function CatalogePage({ products, onAddToCart }) {
   const genre = ["All", "Jazz", "Electronic", "Rock", "Classical"];
-  const [selectedGenre, setSelectedGenre] = useState("ALL");
+  const [selectedGenre, setSelectedGenre] = useState("All");
 
   //check
   const validProduct = products || [];
 
   const filteredProducts =
-    selectedGenre === "ALL"
+    selectedGenre === "All"
       ? validProduct
       : validProduct.filter((p) => p.genre === selectedGenre);
 
@@ -22,15 +22,15 @@ function CatalogePage({ products, onAddToCart }) {
 
       {/** filter bar */}
       <div className="filter-bar">
-        {genre.map((cat) => {
+        {genre.map((cat) => (
           <button
             key={cat}
             className={`filter-pill ${selectedGenre === cat ? "active" : ""}`}
             onClick={() => setSelectedGenre(cat)}
           >
             {cat}
-          </button>;
-        })}
+          </button>
+        ))}
       </div>
 
       {/**Product Grid */}

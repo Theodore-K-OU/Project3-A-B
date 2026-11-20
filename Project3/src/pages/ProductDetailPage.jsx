@@ -51,7 +51,7 @@ const ProductDetailPage = ({ products, onAddToCart }) => {
                 max={product.stock}
                 value={qty}
                 onChange={(e) =>
-                  setQty(Math.max(1, pasrseInt(e.target.value, 10) || 1))
+                  setQty(Math.max(1, parseInt(e.target.value, 10) || 1))
                 }
               />
             </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CheckoutPage = ({ cart, onClearCart }) => {
   //check
@@ -43,9 +43,9 @@ const CheckoutPage = ({ cart, onClearCart }) => {
         <p>A confirmation email has been sent to {formData.email}.</p>
         <p>Your order will be shipped to:</p>
 
-        <link className="btn btn-secondary" to="/">
+        <Link className="btn btn-secondary" to="/">
           Back to Catalog
-        </link>
+        </Link>
       </div>
     );
   }
@@ -55,9 +55,9 @@ const CheckoutPage = ({ cart, onClearCart }) => {
     return (
       <div className="checkout-empty">
         <h2>Your cart is empty</h2>
-        <link className="btn btn-secondary" to="/">
+        <Link className="btn btn-secondary" to="/">
           return to Catalog
-        </link>
+        </Link>
       </div>
     );
   }
@@ -86,7 +86,7 @@ const CheckoutPage = ({ cart, onClearCart }) => {
               Email:<span>*</span>
             </label>
             <input
-              type="text"
+              type="email"
               id="email"
               name="email"
               required
